@@ -1,0 +1,56 @@
+{% load staticfiles %}
+
+<html lang="cs">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+	<title>Pošli to dál</title>
+  </head>
+
+  <body>
+       <div class="content-wrapper">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+      				</button>
+				<a class="navbar-brand ozdobne" href="index.php"><b> Pošli to dál... </b></a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Kategorie<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						</ul>
+					</li>
+					
+					<li><a href="?go=moje">Moje věci</a></li>
+					<li><a href="?go=přidat">Nabídnout věc</a></li>
+				</ul>
+    	
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="?go=user"><span class="glyphicon glyphicon-user"></span></a></li>
+					<li><a href="?go=zpravy"><span class="glyphicon glyphicon-envelope"></span> Zprávy </a></li>
+					<li><a href="_logout.php"><span class="glyphicon glyphicon-off"></span> Odhlásit </a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	</div>
+	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
